@@ -1,0 +1,6 @@
+{
+  "name": "DOONGWOO.NET",
+  "description": "국내 최고의 도로안전시설물 온라인 카탈로그 및 통합 CMS 관리 시스템",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

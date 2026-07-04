@@ -1,0 +1,59 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Categories
+    match /categories/{catId} {
+      allow read, write: if true;
+    }
+
+    // Products
+    match /products/{prodId} {
+      allow read, write: if true;
+    }
+
+    // Projects
+    match /projects/{projId} {
+      allow read, write: if true;
+    }
+
+    // News
+    match /news/{newsId} {
+      allow read, write: if true;
+    }
+
+    // Downloads
+    match /downloads/{downloadId} {
+      allow read, write: if true;
+    }
+
+    // Inquiries
+    match /inquiries/{inqId} {
+      allow read, write: if true;
+    }
+
+    // SearchLogs
+    match /searchLogs/{logId} {
+      allow read, write: if true;
+    }
+
+    // Stats
+    match /stats/{statId} {
+      allow read, write: if true;
+    }
+
+    // Certifications
+    match /certifications/{certId} {
+      allow read, write: if true;
+    }
+
+    // Settings (for banners, org chart, etc.)
+    match /settings/{settingId} {
+      allow read, write: if true;
+    }
+  }
+}
