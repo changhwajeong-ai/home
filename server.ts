@@ -37,7 +37,7 @@ async function getEmailSettings(): Promise<any> {
 }
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware for JSON parsing (extended limit for large files like CAD, Catalogs)
 app.use(express.json({ limit: "50mb" }));
